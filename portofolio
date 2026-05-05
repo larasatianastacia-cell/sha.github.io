@@ -3,67 +3,256 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portofolio Saya - Showcase proyek dan keahlian">
+    <meta name="description" content="Portofolio Anastacia Larasati - Full Stack Developer dengan keahlian HTML5, CSS3, JavaScript, dan Web Development">
+    <meta name="keywords" content="developer, web developer, portofolio, HTML, CSS, JavaScript, responsive design">
     <meta name="author" content="Anastacia Larasati">
-    <title>Portofolio Saya</title>
+    <meta name="theme-color" content="#6366f1">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Portofolio Anastacia Larasati">
+    <meta property="og:description" content="Full Stack Developer - Menciptakan solusi digital inovatif dan user-friendly">
+    <meta property="og:image" content="https://larasatianastacia-cell.github.io/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Portofolio Anastacia Larasati">
+    <meta property="twitter:description" content="Full Stack Developer - Menciptakan solusi digital inovatif dan user-friendly">
+    
+    <title>Anastacia Larasati - Full Stack Developer | Portofolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">Tentang</a></li>
-                <li><a href="#skills">Keahlian</a></li>
-                <li><a href="#projects">Proyek</a></li>
-                <li><a href="#contact">Kontak</a></li>
-            </ul>
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main" class="skip-link">Lewati ke konten utama</a>
+
+    <header role="banner">
+        <nav role="navigation" aria-label="Navigasi utama">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="#home" aria-label="Kembali ke beranda">AL</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#about">Tentang</a></li>
+                    <li><a href="#skills">Keahlian</a></li>
+                    <li><a href="#projects">Proyek</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+                <button class="theme-toggle" id="themeToggle" aria-label="Ganti tema">
+                    <span class="theme-icon">🌙</span>
+                </button>
+            </div>
         </nav>
     </header>
 
-    <section id="about">
-        <h1>Anastacia Larasati</h1>
-        <p>Selamat datang di portofolio saya. Saya adalah seorang developer dengan passion dalam menciptakan solusi digital yang inovatif dan user-friendly.</p>
-    </section>
-
-    <section id="skills">
-        <h2>Keahlian</h2>
-        <ul>
-            <li>HTML5 & CSS3</li>
-            <li>JavaScript</li>
-            <li>Web Development</li>
-            <li>Responsive Design</li>
-        </ul>
-    </section>
-
-    <section id="projects">
-        <h2>Proyek Saya</h2>
-        <article class="project">
-            <h3>Proyek 1</h3>
-            <p>Deskripsi proyek pertama Anda di sini.</p>
-            <a href="#" class="project-link">Lihat Proyek</a>
-        </article>
-        <article class="project">
-            <h3>Proyek 2</h3>
-            <p>Deskripsi proyek kedua Anda di sini.</p>
-            <a href="#" class="project-link">Lihat Proyek</a>
-        </article>
-        <article class="project">
-            <h3>Proyek 3</h3>
-            <p>Deskripsi proyek ketiga Anda di sini.</p>
-            <a href="#" class="project-link">Lihat Proyek</a>
-        </article>
-    </section>
-
-    <footer>
-        <section id="contact">
-            <h2>Hubungi Saya</h2>
-            <ul>
-                <li><a href="mailto:larasatianastacia@gmail.com">Email</a></li>
-                <li><a href="https://www.instagram.com/ansstcc?igsh=MTBhNG8zOGM3OGp2dw==" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-                <li><a href="https://github.com/larasatianastacia-cell" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-            </ul>
+    <main id="main">
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h1>Halo, Saya Anastacia Larasati 👋</h1>
+                        <p class="intro-text">
+                            Saya adalah seorang <strong>Full Stack Developer</strong> dengan passion dalam menciptakan solusi digital yang inovatif, user-friendly, dan berkinerja tinggi. Dengan pengalaman dalam HTML5, CSS3, JavaScript, dan Web Development, saya siap membantu mewujudkan visi digital Anda.
+                        </p>
+                        <div class="cta-buttons">
+                            <a href="#projects" class="btn btn-primary">Lihat Proyek</a>
+                            <a href="#contact" class="btn btn-secondary">Hubungi Saya</a>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="profile-photo.jpg" alt="Foto profil Anastacia Larasati" loading="lazy">
+                    </div>
+                </div>
+            </div>
         </section>
-        <p>&copy; 2026 Anastacia Larasati. Semua hak cipta dilindungi.</p>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <h2>Keahlian & Teknologi</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Frontend</h3>
+                        <ul>
+                            <li><span class="skill-badge">HTML5</span></li>
+                            <li><span class="skill-badge">CSS3</span></li>
+                            <li><span class="skill-badge">JavaScript</span></li>
+                            <li><span class="skill-badge">Responsive Design</span></li>
+                            <li><span class="skill-badge">React</span></li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Backend & Tools</h3>
+                        <ul>
+                            <li><span class="skill-badge">Node.js</span></li>
+                            <li><span class="skill-badge">Git & GitHub</span></li>
+                            <li><span class="skill-badge">REST API</span></li>
+                            <li><span class="skill-badge">Web Development</span></li>
+                            <li><span class="skill-badge">Web Performance</span></li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Soft Skills</h3>
+                        <ul>
+                            <li><span class="skill-badge">Problem Solving</span></li>
+                            <li><span class="skill-badge">Communication</span></li>
+                            <li><span class="skill-badge">Team Work</span></li>
+                            <li><span class="skill-badge">Project Management</span></li>
+                            <li><span class="skill-badge">Attention to Detail</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2>Proyek Unggulan</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="project-1.jpg" alt="Preview Proyek 1" loading="lazy">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link" aria-label="Lihat detail Proyek 1">Lihat Detail</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>E-Commerce Platform</h3>
+                            <p>Platform e-commerce responsif dengan fitur cart, checkout, dan integrasi payment gateway. Dibangun menggunakan HTML5, CSS3, dan JavaScript vanilla.</p>
+                            <div class="project-tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="#" class="btn-small">Live Demo</a>
+                                <a href="https://github.com/larasatianastacia-cell" class="btn-small" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="project-2.jpg" alt="Preview Proyek 2" loading="lazy">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link" aria-label="Lihat detail Proyek 2">Lihat Detail</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Task Management App</h3>
+                            <p>Aplikasi manajemen tugas dengan fitur real-time collaboration, deadline reminder, dan progress tracking. Built with modern JavaScript framework.</p>
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">MongoDB</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="#" class="btn-small">Live Demo</a>
+                                <a href="https://github.com/larasatianastacia-cell" class="btn-small" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="project-3.jpg" alt="Preview Proyek 3" loading="lazy">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link" aria-label="Lihat detail Proyek 3">Lihat Detail</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Portfolio Website</h3>
+                            <p>Website portofolio pribadi dengan design modern, animasi smooth, dan dark mode support. Fully responsive dan optimized untuk SEO.</p>
+                            <div class="project-tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="#" class="btn-small">Live Demo</a>
+                                <a href="https://github.com/larasatianastacia-cell" class="btn-small" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Mari Berkolaborasi</h2>
+                <p class="contact-intro">Saya tertarik dengan peluang baru dan proyek yang menantang. Jangan ragu untuk menghubungi saya!</p>
+                
+                <div class="contact-content">
+                    <div class="contact-form">
+                        <form action="#" method="POST" aria-label="Form kontak">
+                            <div class="form-group">
+                                <label for="name">Nama Lengkap</label>
+                                <input type="text" id="name" name="name" required aria-required="true" placeholder="Nama Anda">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required aria-required="true" placeholder="email@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subjek</label>
+                                <input type="text" id="subject" name="subject" required aria-required="true" placeholder="Topik pesan Anda">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Pesan</label>
+                                <textarea id="message" name="message" rows="5" required aria-required="true" placeholder="Tulis pesan Anda di sini..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                        </form>
+                    </div>
+
+                    <div class="contact-info">
+                        <h3>Hubungi Saya Langsung</h3>
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <h4>📧 Email</h4>
+                                <a href="mailto:larasatianastacia@gmail.com">larasatianastacia@gmail.com</a>
+                            </div>
+                            <div class="contact-method">
+                                <h4>🔗 Social Media</h4>
+                                <ul>
+                                    <li>
+                                        <a href="https://www.instagram.com/ansstcc?igsh=MTBhNG8zOGM3OGp2dw==" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                            Instagram
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/larasatianastacia-cell" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                                            GitHub
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://linkedin.com/in/anastacia-larasati" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                            LinkedIn
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="contact-method">
+                                <h4>📍 Lokasi</h4>
+                                <p>Indonesia</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="footer-content">
+            <p>&copy; 2026 Anastacia Larasati. Semua hak cipta dilindungi.</p>
+            <p class="footer-note">Dibuat dengan ❤️ menggunakan HTML, CSS & JavaScript</p>
+        </div>
     </footer>
 
     <script src="scripts.js"></script>
