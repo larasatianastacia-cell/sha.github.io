@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portofolio profesional Saya - Showcase proyek dan keahlian">
+    <meta name="author" content="Lara Satiana Nastacia">
     <title>Portofolio Saya</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -10,23 +12,60 @@
     <header>
         <nav>
             <ul>
-                <li><a href="about">Tentang</a></li>
-                <li><a href="projects">Proyek</a></li>
-                <li><a href="contact">Kontak</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#skills">Keahlian</a></li>
+                <li><a href="#projects">Proyek</a></li>
+                <li><a href="#contact">Kontak</a></li>
             </ul>
         </nav>
     </header>
+
     <section id="about">
-        <h1>sha</h1>
-        <p>Deskripsi singkat tentang Anda.</p>
+        <h1>Lara Satiana Nastacia</h1>
+        <p>Selamat datang di portofolio saya. Saya adalah seorang developer dengan passion dalam menciptakan solusi digital yang inovatif dan user-friendly.</p>
     </section>
+
+    <section id="skills">
+        <h2>Keahlian</h2>
+        <ul>
+            <li>HTML5 & CSS3</li>
+            <li>JavaScript</li>
+            <li>Web Development</li>
+            <li>Responsive Design</li>
+        </ul>
+    </section>
+
     <section id="projects">
         <h2>Proyek Saya</h2>
-        <!-- Daftar proyek akan ditambahkan di sini -->
+        <article class="project">
+            <h3>Proyek 1</h3>
+            <p>Deskripsi proyek pertama Anda di sini.</p>
+            <a href="#" class="project-link">Lihat Proyek</a>
+        </article>
+        <article class="project">
+            <h3>Proyek 2</h3>
+            <p>Deskripsi proyek kedua Anda di sini.</p>
+            <a href="#" class="project-link">Lihat Proyek</a>
+        </article>
+        <article class="project">
+            <h3>Proyek 3</h3>
+            <p>Deskripsi proyek ketiga Anda di sini.</p>
+            <a href="#" class="project-link">Lihat Proyek</a>
+        </article>
     </section>
+
     <footer>
-        <p>&copy; 2025 Nama Anda. Semua hak cipta dilindungi.</p>
+        <section id="contact">
+            <h2>Hubungi Saya</h2>
+            <ul>
+                <li><a href="mailto:your-email@example.com">Email</a></li>
+                <li><a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                <li><a href="https://github.com/larasatianastacia-cell" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            </ul>
+        </section>
+        <p>&copy; 2026 Lara Satiana Nastacia. Semua hak cipta dilindungi.</p>
     </footer>
+
     <script src="scripts.js"></script>
 </body>
 </html>
